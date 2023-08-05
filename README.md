@@ -11,3 +11,18 @@ Minikube helps to create virtual nodes in a single machine, so that we can have 
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 <br>
 sudo install minikube-linux-amd64 /usr/local/bin/minikube <br>
 
+## Deploy deployments / pods and service
+kubectl apply -f hello-deployment.yaml <br>
+kubectl get deployments <br>
+kubectl get pods <br>
+kubectl describe  pods <br>
+kubectl apply -f hello-svc.yaml <br>
+kubectl get services <br>
+minikube service list <br>
+curl http://<IP Address>:31000 <br> 
+-----> Hello from hello-77c947d946-42492  (77c947d946-42492 is the container name) <br>
+successive curl will result in load balancing of workers. <br>
+
+ ## Credits
+ Dockerfile is from https://github.com/pbitty/hello-from <br>
+
