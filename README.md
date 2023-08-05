@@ -22,6 +22,7 @@ minikube service list <br>
 curl http://<IP Address>:31000 <br> 
 -----> Hello from hello-77c947d946-42492  (77c947d946-42492 is the container name) <br>
 successive curl will result in load balancing of workers. <br>
+dashboard command: minikube dashboard <br>
 
  ## Credits
  Dockerfile is from https://github.com/pbitty/hello-from <br>
